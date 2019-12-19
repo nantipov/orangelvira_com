@@ -1,0 +1,4 @@
+[submodule "root_hugosite/themes/dream"]
+	path = root_hugosite/themes/dream
+	url = https://github.com/g1eny0ung/hugo-theme-dream.git
+	branch = master

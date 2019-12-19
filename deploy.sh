@@ -4,6 +4,7 @@ PUBLIC_DIR=public
 
 git fetch
 git pull
+git submodule update --init --recursive
 
 #build and deploy - root
 cd root_hugosite
