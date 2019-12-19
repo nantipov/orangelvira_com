@@ -1,0 +1,10 @@
+baseURL = "https://orangelvira.com"
+languageCode = "en-us"
+title = "Orange Elvira blog"
+theme = "dream"
+googleAnalytics = "UA-154795000-1"
+enableRobotsTXT = true
+
+[params]
+  background = "#86af2d"
+  author = "Elvira Antipova"
