@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orangelvira-com-web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: orangelvira-com-web
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: orangelvira-com-web
+    spec:
+      containers:
+        - name: orangelvira-com-web
+          image: nantipov/orangelvira-com-web:2
+          ports:
+            - name: http
+              containerPort: 8080
+          resources:
+            requests:
+              cpu: 70m
+              memory: 50Mi
+            limits:
+              cpu: 100m
+              memory: 100Mi
